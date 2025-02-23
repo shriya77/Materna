@@ -22,10 +22,6 @@
                 <li><a href="../WellnessHub/WellnessHub_Main/WellnessHub.html">Wellness Hub</a></li>
                 <li><a href="mypreg.html">My Pregnancy</a></li>
                 <li><a href="../contact_page/contact.html">Contact Us</a></li>
-                <li class="login-container">
-                    <a href="#">Log In</a>
-                    <img src="Login_Icon.jpg" alt="User Icon" class="user-icon">
-                </li>
             </ul>
         </nav>
     </header>
@@ -135,7 +131,16 @@
             <p><strong>Prevention Methods:</strong></p>
             <ul id="prevention"></ul>
         </div>
-    </div>  
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            if (!sessionStorage.getItem("loggedInUser")) {
+                alert("Please log in first!");
+                window.location.href = "auth.html"; // Redirect to login page
+            }
+        });
+    </script>    
 
     <footer>
         <p>© 2025 Materna. All rights reserved.</p>
