@@ -1,0 +1,233 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600; 
+    margin: 0;
+    padding: 0;
+    background-color: #EAE1CF;
+}
+
+header {
+    background-color: #E2ADA3;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav {
+    width: 100%;
+}
+
+header nav ul {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 40px; /* Adjust this value to control space between tabs */
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 15px;
+}
+
+nav ul li:last-child {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 18px; /* Increase this value for larger text */
+}
+
+
+
+/* Logo Styling */
+.logo {
+    width: 130px; /* Adjust as needed */
+    height: auto;
+    margin-left: px; /* Adjust this value to shift left or right */
+    margin-right: 100px; /* Controls spacing between logo and menu */
+}
+
+/* Adjust Menu Items */
+nav ul li {
+    display: flex;
+    align-items: center;
+    margin: 0 20px; /* Adjust spacing between menu items */
+}
+
+/* Optional: Fine-tune spacing for different screen sizes */
+@media (max-width: 1024px) {
+    .logo {
+        margin-left: 20px; /* Adjust for tablet */
+    }
+}
+
+@media (max-width: 768px) {
+    .logo {
+        margin-left: 5px; /* Adjust for mobile */
+    }
+}
+
+/* Space out the Log In section properly */
+.user-icon {
+    width: 25px;
+    height: 25px;
+    margin-left: 0px; /* Removed extra margin */
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 15px;
+}
+
+nav ul li:last-child {
+    margin-left: auto; /* Pushes Log In to the right */
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Adjusts spacing between text and icon */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+
+/* Container */
+.container {
+    width: 70%;
+    margin: auto;
+    background: white;
+    padding-bottom: 30px;
+}
+
+/* Header */
+.header {
+    margin-top: 30px;
+    position: relative;
+    width: 100%;
+}
+
+.header img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+}
+
+.header-text {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(235, 225, 200, 0.9);
+    padding: 20px 50px;
+    font-size: 60px;
+    font-weight: bold;
+    color: #234451;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600; 
+}
+
+/* Content Layout */
+.content {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+}
+
+/* Contact Form */
+.contact-form {
+    flex: 1;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 19px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+}
+
+.full-width {
+    width: 100%;
+}
+
+input, textarea {
+    padding: 10px;
+    border: 2px solid #234451;
+    background: #D9AFA4;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600; 
+}
+
+textarea {
+    height: 80px;
+    resize: none;
+}
+
+/* Submit Button */
+.btn {
+    background: #25303B;
+    color: #EAE3CA;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    width: 120px;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600; 
+}
+
+.btn:hover {
+    background: #1B252D;
+}
+
+/* Map */
+.map {
+    flex: 1;
+}
+
+#map {
+    width: 100%;
+    height: 360px;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #E2ADA3; 
+    color: #333;
+    text-align: center;
+    padding: 15px;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    margin-top: 80px;
+}
+
