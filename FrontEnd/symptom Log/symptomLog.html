@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Symptom & Mood Tracker</title>
+    <link rel="stylesheet" href="symptomLog.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Nunito&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/luxon@2.3.0/build/global/luxon.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-menu">
+                <li class="logo-container">
+                    <a href="HomePage.html">
+                        <img src="Logo.jpg" alt="Materna Logo" class="logo">
+                    </a>
+                </li>
+                <li><a href="../HomePage/HomePage.html">Home</a></li>
+                <li><a href="symptomLog.html">Symptom Log</a></li>
+                <li><a href="../sympton_SOS/symptomSOS.html">Symptom SOS</a></li>
+                <li><a href="../WellnessHub/WellnessHub_Main/WellnessHub.html">Wellness Hub</a></li>
+                <li><a href="../my_pregnancy/mypreg.html">My Pregnancy</a></li>
+                <li><a href="../contact_page/contact.html">Contact Us</a></li>
+                <li class="login-container">
+                    <a href="#">Log In</a>
+                    <img src="Login_Icon.jpg" alt="User Icon" class="user-icon">
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section class="tracker">
+        <h1>Symptom & Mood Tracker</h1>
+        <p>Easily log and track your pregnancy symptoms and mood with our Symptom Tracker Calendar. Select a date, add symptoms and get advice, and keep notes of your mood changes for future reference.</p>
+        <div class="calendar-container">
+            <div class="calendar">
+                <div class="calendar-header">
+                    <button id="prevMonth">&lt;</button>
+                    <h2 id="currentMonth">February 2025</h2>
+                    <button id="nextMonth">&gt;</button>
+                </div>
+                <div class="weekdays"></div>
+                <div class="days">
+                    <!-- Days will be populated dynamically -->
+                </div>
+            </div>
+
+            <div class="log-box">
+                <div class="recommendation">
+                    <img id="rec-image" src="images/default.png" alt="Recommendation">
+                    <p id="rec-text">Select a symptom to see recommendations.</p>
+                </div>
+
+                <!-- Mood Tracker -->
+                <label>Mood</label>
+                <div class="mood-options">
+                    <span class="mood" data-mood="Happy" style="color: #FFD700;">😁</span>
+                    <span class="mood" data-mood="Pleasant" style="color: #ff8bd2;">🙂</span>
+                    <span class="mood" data-mood="Neutral" style="color: #ADD8E6;">😐</span>
+                    <span class="mood" data-mood="Sad" style="color: #FF6347;">😔</span>
+                    <span class="mood" data-mood="Depressed" style="color: #100cff;">😭</span>
+                    <span class="mood" data-mood="Dizzy" style="color: #ff9914;">😵‍💫</span>
+                    <span class="mood" data-mood="Nauseous" style="color: #04ff22;">🤢</span>
+                </div>
+
+                <!-- Symptom Tracker -->
+                <label for="symptom-select">Symptom</label>
+                <select id="symptom-select">
+                    <option value="">Select Symptom</option>
+                    <option value="Back Pain">Back Pain</option>
+                    <option value="Fatigue">Fatigue</option>
+                    <option value="Mood Swings">Mood Swings</option>
+                    <option value="More Urination">More Urination</option>
+                    <option value="Tender">Tender or Swollen Breasts</option>
+                    <option value="Food Cravings and Dislikes">Food Cravings and Dislikes</option>
+                    <option value="Upset Stomach (vomiting too)">Upset Stomach (vomiting too)</option>
+                    <option value="Heartburn">Heartburn</option>
+                    <option value="Constipation">Constipation</option>
+                    <option value="Serious emotional changes (sadness)">Serious emotional changes (sadness)</option>
+                    <option value="Increased vaginal discharge">Increased vaginal discharge</option>
+                    <option value="Skin changes (spider veins)">Skin changes (spider veins)</option>
+                    <option value="Dental issues (gum bleeding)">Dental issues (gum bleeding)</option>
+                    <option value="Larger belly and breasts">Larger belly and breasts</option>
+                    <option value="Nosebleeds & stuffiness">Nosebleeds & stuffiness</option>
+                    <option value="Skin changes (melasma)">Skin changes (melasma)</option>
+                    <option value="Braxton Hicks contractions">Braxton Hicks contractions</option>
+                    <option value="Leg cramps">Leg cramps</option>
+                    <option value="Dizziness">Dizziness</option>
+                    <option value="Vaginal discharge (with odor or pain)">Vaginal discharge (with odor or pain)</option>
+                    <option value="Urinary tract infections">Urinary tract infections</option>
+                    <option value="Frequent urination">Frequent urination</option>
+                    <option value="Spider veins">Spider veins</option>
+                    <option value="Shortness of breath">Shortness of breath</option>
+                    <option value="Frequent urination (Leaking)">Frequent urination (Leaking)</option>
+                    <option value="Heart palpitations">Heart palpitations</option>
+                    <option value="Backaches">Backaches</option>
+                    <option value="Nausea and vomiting (if present)">Nausea and vomiting (if present)</option>
+                    <option value="Swelling of hands and feet">Swelling of hands and feet</option>
+                    <option value="Severe headaches">Severe headaches</option>
+                    <option value="Mood and mental health (depression or anxiety)">Mood and mental health (depression or anxiety)</option>
+                    <option value="Leaking amniotic fluid">Leaking amniotic fluid</option>
+                </select>
+                <div class="saving">
+                    <save_button id="save-log">SAVE</save_button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Materna. All rights reserved.</p>
+    </footer>
+
+    <script src="symptomLog.js"></script>
+</body>
+</html>
