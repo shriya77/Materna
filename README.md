@@ -18,7 +18,7 @@ The **Pregnancy Symptom Tracker** is a web app designed to help expectant mother
 ---
 
 ### 💡 Immediate Symptom Support
-- Symptom Logging: Users can input symptoms like nausea, fatigue, cravings, etc.
+- Symptom Logging: Users can input symptoms like nausea, fatigue, cravings, etc on a calendar.
 - The app provides instant feedback on whether the symptom is normal or requires attention.
 - Personalized tips on managing symptoms effectively.
 
