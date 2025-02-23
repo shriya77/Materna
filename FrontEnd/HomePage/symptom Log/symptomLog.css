@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
+
+/* Global Styling */
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #FAF3E0;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+    padding-bottom: 80px; /* Adjust as needed */
+}
+
+header {
+    background-color: #E2ADA3;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw; /* Ensures full width */
+    position: relative; /* Keeps it in place */
+    left: 0;
+    top: 0;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+header nav {
+    width: 100%;
+}
+
+header nav ul {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 40px; /* Adjust this value to control space between tabs */
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 15px;
+}
+
+nav ul li:last-child {
+    margin-right: 50px; /* Decrease from auto to a set value */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 18px; /* Increase this value for larger text */
+}
+
+
+
+/* Logo Styling */
+.logo {
+    width: 130px; /* Adjust as needed */
+    height: auto;
+    margin-left: px; /* Adjust this value to shift left or right */
+    margin-right: 100px; /* Controls spacing between logo and menu */
+}
+
+/* Adjust Menu Items */
+nav ul li {
+    display: flex;
+    align-items: center;
+    margin: 0 20px; /* Adjust spacing between menu items */
+}
+
+/* Optional: Fine-tune spacing for different screen sizes */
+@media (max-width: 1024px) {
+    .logo {
+        margin-left: 20px; /* Adjust for tablet */
+    }
+}
+
+@media (max-width: 768px) {
+    .logo {
+        margin-left: 5px; /* Adjust for mobile */
+    }
+}
+
+/* Space out the Log In section properly */
+.user-icon {
+    width: 25px;
+    height: 25px;
+    margin-left: 0px; /* Removed extra margin */
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 15px;
+}
+
+nav ul li:last-child {
+    margin-left: auto; /* Pushes Log In to the right */
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Adjusts spacing between text and icon */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Tracker Section */
+.tracker h1 {
+    font-size: 2.5rem;
+    color: #1F2937;
+}
+.tracker p {
+    font-size: 1.2rem;
+    color: #555;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-bottom: 2%;
+}
+
+/* Calendar & Log Layout */
+.calendar-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+/* Calendar */
+.calendar {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+    width: 50%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+}
+
+.day {
+    background: #ECECEC;
+    padding: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.day.selected {
+    background: #DFA69F;
+    color: white;
+}
+
+/* Log Box */
+.log-box {
+    width: 40%;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: "Poppins", sans-serif;
+}
+
+.recommendation img {
+    width: 20%;
+    border-radius: 10px;
+}
+
+/* Mood Tracker */
+.mood-options {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    font-size: 2rem;
+    margin: 10px 0;
+}
+
+.mood {
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.mood.selected {
+    transform: scale(1.2);
+    border-bottom: 3px solid currentColor;
+}
+
+/* Symptom & Button */
+label {
+    display: block;
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+select, button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+button {
+    background: #DFA69F;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 30px;
+    width: 90px;
+    height: 50px;
+    margin-top: 30px;
+}
+
+save_button {
+    background: #DFA69F;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 25px;
+    margin-top: 20px;
+    padding: 10px;
+    padding-left: 60px;
+    padding-right: 60px;
+    width: 150px;
+    height: 50px;
+}
+
+.saving {
+    padding-top: 50px; /* Moves the button down */
+    text-align: center; /* Keeps it centered */
+}
+
+.weekdays {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    font-weight: bold;
+    color: #555;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.weekday {
+    background: none;
+    padding: 10px;
+}
+
+#symptom-select {
+    font-size: 18px; /* Change size as needed */
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.day.logged {
+    background-color: #ffd7d7; /* Light red/pink */
+    color: black;
+    font-weight: bold;
+}
+
+footer {
+    margin-top: 40px;
+    background-color: #E2ADA3; 
+    color: #333;
+    text-align: center;
+    padding: 15px;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+
