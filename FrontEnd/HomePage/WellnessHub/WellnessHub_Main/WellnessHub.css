@@ -1,0 +1,609 @@
+/* Poppins- SemiBold */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Nunito+Sans:wght@400&display=swap');
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #EAE3CA;
+    color: #333;
+}
+
+header {
+    background-color: #E2ADA3;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav {
+    width: 100%;
+}
+
+header nav ul {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 40px; /* Adjust this value to control space between tabs */
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 15px;
+}
+
+nav ul li:last-child {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 18px; /* Increase this value for larger text */
+}
+
+/* Logo Styling */
+.logo {
+    width: 130px; /* Adjust as needed */
+    height: auto;
+    margin-left: px; /* Adjust this value to shift left or right */
+    margin-right: 100px; /* Controls spacing between logo and menu */
+}
+
+/* Adjust Menu Items */
+nav ul li {
+    display: flex;
+    align-items: center;
+    margin: 0 20px; /* Adjust spacing between menu items */
+}
+
+/* Optional: Fine-tune spacing for different screen sizes */
+@media (max-width: 1024px) {
+    .logo {
+        margin-left: 20px; /* Adjust for tablet */
+    }
+}
+
+@media (max-width: 768px) {
+    .logo {
+        margin-left: 5px; /* Adjust for mobile */
+    }
+}
+
+/* Space out the Log In section properly */
+.user-icon {
+    width: 25px;
+    height: 25px;
+    margin-left: 0px; /* Removed extra margin */
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 15px;
+}
+
+nav ul li:last-child {
+    margin-left: auto; /* Pushes Log In to the right */
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Adjusts spacing between text and icon */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.recipes-container {
+    width: 80%;
+    margin: 40px auto;
+}
+
+.recipes-header {
+    font-size: 48px;
+    font-weight: bold;
+    color: #333;
+    margin: 0 50px 10px;
+}
+
+.recipe-count {
+    font-size: 35px;
+    font-family: 'Nunito Sans', sans-serif;
+    color: #333;
+    margin: 5px 50px 20px;
+}
+
+.recipe-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two cards per row */
+    gap: 20px;
+    padding: 20px;
+}
+
+/**************************
+    Filter Buttons (Aligned Right)
+**************************/
+.filter-buttons-container {
+    display: flex;
+    justify-content: flex-end; /* Aligns buttons to the right */
+    align-items: center;
+    width: 100%;
+    padding: 10px 50px 20px;
+    box-sizing: border-box;
+}
+
+.filter-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.filter-buttons button {
+    background-color: #E2ADA3;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 23px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.filter-buttons button:hover {
+    background-color: #D18B82;
+    color: #DFA69F;
+}
+
+/**************************
+    Recipe Cards Layout
+**************************/
+.recipe-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 0 50px;
+}
+
+.recipe-card {
+    position: relative; /* Needed for absolute positioning of the tag */
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.recipe-card img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.recipe-card {
+    text-decoration: none;
+}
+
+.recipe-card a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.recipe-tag {
+    position: absolute;
+    top: 10px;  /* Distance from top */
+    right: 10px; /* Align to the right */
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.recipe-level {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #EAE3CA; /* Matching button color */
+    color: #333;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 15px; /* Rounded badge */
+}
+
+.recipe-content {
+    padding: 15px;
+    background: #ffe0cc;
+}
+
+.recipe-content h3 {
+    margin: 0;
+    font-size: 22px;
+    color: #333;
+}
+
+.recipe-content p {
+    font-size: 14px;
+    color: #666;
+}
+
+.recipe-card h2 {
+    font-size: 25px;
+    margin: 15px;
+}
+
+.recipe-card p {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 22px;
+    color: #555;
+    margin: 0 15px 15px;
+}
+
+/**************************
+    Responsive Design Adjustments
+**************************/
+@media (max-width: 768px) {
+    .filter-buttons-container {
+        justify-content: center; /* Center buttons on smaller screens */
+        flex-wrap: wrap;
+        padding: 10px 20px;
+    }
+
+    .filter-buttons {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .recipes-header, .recipe-count {
+        text-align: center;
+        margin: 0 0 10px;
+    }
+}
+/* Fix Video Section */
+.videos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: -20px;
+}
+
+.video-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Allow wrapping for responsiveness */
+    gap: 20px;
+    width: 85%;
+    margin-bottom: 50px;
+}
+
+.video-item {
+    background: #D18B82;
+    border-radius: 10px;
+    padding: 15px;
+    width: 310px; /* Adjusted width */
+    height: 280px; /* Adjusted height */
+    text-align: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.video-item img {
+    width: 100%;
+    height: auto;
+    max-height: 100px; /* Adjusted for proper fit */
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.video-item iframe {
+    width: 500px; /* Reduce the width of the embedded video */
+    height: 200px; /* Maintain aspect ratio */
+    max-width: 310px; /* Prevent the video from being too large */
+    display: block;
+    margin: 0 auto; /* Center the video inside the box */
+}
+
+.video-item p {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333;
+    font-size: 17px;
+}
+
+.videos h2 {
+    font-size: 56px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+/* Responsive Fix */
+@media (max-width: 768px) {
+    .video-list {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .video-item {
+        width: 90%; /* Full width on smaller screens */
+        height: auto;
+    }
+}
+
+
+/* BANNER */
+.full-width-banner img {
+    width: 100%;
+    display: block;
+    height: auto;
+    margin-bottom: 60px;
+}
+
+/* FOOD LIST */
+
+/* Food List Container */
+.food-list-container {
+    display: flex;
+    justify-content: center; /* Adjust if needed */
+    align-items: flex-start; /* Align items properly */
+    gap: 40px; /* Space between elements */
+    flex-wrap: wrap; /* Ensure responsiveness */
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+
+.food-category {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.category-title {
+    background-color: #165B33; /* Green for Can Eat */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    margin: 0 auto 20px auto;
+    text-align: center;
+    width: 100%;
+    max-width: 250px;
+    display: flex;
+    justify-content: center;
+}
+
+.food-category h3 {
+    padding: 10px;
+    font-size: 30px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+/* Can Eat Section */
+.can-eat h3 {
+    background-color: #163d2c;
+    color: white;
+    display: inline-block;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+.can-eat .food-item {
+    background-color: #a6d5c7;
+    color: #163d2c;
+}
+
+/* Cannot Eat Section */
+.cannot-eat h3 {
+    background-color: #5d1a1a;
+    color: white;
+    display: inline-block;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+.cannot-eat .food-item {
+    background-color: #e6a6a6;
+    color: #5d1a1a;
+}
+
+.cannot-eat-title {
+    margin-right: 150px; /* Adjust this value to move left */
+}
+
+.food-items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto; /* Ensures it stays centered */
+    padding-left: 20px; /* Adjust this value slightly to move right */
+}
+
+/* Food Items */
+.food-item {
+    background-color: #d9ece7; /* Light green for 'Can Eat' */
+    color: #333;
+    font-size: 18px; /* Increase font size */
+    padding: 30px; /* Increase padding for larger cards */
+    margin: 15px 0;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 40%; /* Make the cards take full width of the container */
+    height: 120px; /* Adjust height */
+    margin-bottom: 100px;
+}
+
+/* Responsive Fix */
+@media (max-width: 768px) {
+    .food-list-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px; /* Reduce gap for mobile */
+    }
+
+    .food-category {
+        max-width: 100%; /* Full width on smaller screens */
+    }
+}
+
+/* Pop-up */
+/* Popup Styles */
+#popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%; /* Adjust width as needed */
+    max-width: 600px; /* Ensures it doesn't get too wide */
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    text-align: left;
+}
+
+/* Popup Content Formatting */
+#popup-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#popup-text {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Close Button */
+#popup-close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #e6a89d;
+}
+
+.logo img {
+    width: 20px; /* Adjust size manually */
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #333;
+}
+
+.login {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    position: absolute;
+    top: 15px;
+    right: 30px;
+}
+
+.login-icon {
+    width: 5px; /* Adjust icon size */
+    height: 5px;
+}
+
+.user-icon {
+    width: 25px;  /* Adjust width as needed */
+    height: 25px; /* Adjust height to maintain aspect ratio */
+    margin-left: 5px; /* Space between text and icon */
+}
+
+
+footer {
+    background-color: #E2ADA3; 
+    color: #333;
+    text-align: center;
+    padding: 15px;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
