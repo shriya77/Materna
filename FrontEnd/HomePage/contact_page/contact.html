@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Nunito:wght@400&display=swap" rel="stylesheet">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-menu">
+                <li class="logo-container">
+                    <a href="HomePage.html">
+                        <img src="Logo.jpg" alt="Materna Logo" class="logo">
+                    </a>
+                </li>
+                <li><a href="../HomePage/HomePage.html">Home</a></li>
+                <li><a href="../symptom Log/symptomLog.html">Symptom Log</a></li>
+                <li><a href="../sympton_SOS/symptomSOS.html">Symptom SOS</a></li>
+                <li><a href="../WellnessHub/WellnessHub_Main/WellnessHub.html">Wellness Hub</a></li>
+                <li><a href="../my_pregnancy/mypreg.html">My Pregnancy</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li class="login-container">
+                    <a href="#">Log In</a>
+                    <img src="Login_Icon.jpg" alt="User Icon" class="user-icon">
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="header">
+            <img src="header-image.png" alt="Contact Us Banner">
+            <div class="header-text">Contact Us</div>
+        </div>
+
+        <div class="content">
+            <div class="contact-form">
+                <form>
+                    <div class="form-group">
+                        <label>First Name</label>
+                        <input type="text">
+                    </div>
+                    <div class="form-group">
+                        <label>Last Name</label>
+                        <input type="text">
+                    </div>
+                    <div class="form-group full-width">
+                        <label>Email *</label>
+                        <input type="email" required>
+                    </div>
+                    <div class="form-group full-width">
+                        <label>Message</label>
+                        <textarea></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send</button>
+                </form>
+            </div>
+
+            <div class="map">
+                <div id="map"></div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 Materna. All rights reserved.</p>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="contact.js"></script>
+
+</body>
+</html>
