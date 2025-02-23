@@ -1,0 +1,367 @@
+/* styles.css */
+
+/* Poppins- SemiBold */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Nunito+Sans:wght@400&display=swap');
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #EAE3CA;
+    color: #333;
+}
+
+header {
+    background-color: #E2ADA3;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav {
+    width: 100%;
+}
+
+header nav ul {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 40px; /* Adjust this value to control space between tabs */
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 15px;
+}
+
+nav ul li:last-child {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 18px; /* Increase this value for larger text */
+}
+
+
+
+/* Logo Styling */
+.logo {
+    width: 130px; /* Adjust as needed */
+    height: auto;
+    margin-left: px; /* Adjust this value to shift left or right */
+    margin-right: 100px; /* Controls spacing between logo and menu */
+}
+
+/* Adjust Menu Items */
+nav ul li {
+    display: flex;
+    align-items: center;
+    margin: 0 20px; /* Adjust spacing between menu items */
+}
+
+/* Optional: Fine-tune spacing for different screen sizes */
+@media (max-width: 1024px) {
+    .logo {
+        margin-left: 20px; /* Adjust for tablet */
+    }
+}
+
+@media (max-width: 768px) {
+    .logo {
+        margin-left: 5px; /* Adjust for mobile */
+    }
+}
+
+/* Space out the Log In section properly */
+.user-icon {
+    width: 25px;
+    height: 25px;
+    margin-left: 0px; /* Removed extra margin */
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 15px;
+}
+
+nav ul li:last-child {
+    margin-left: auto; /* Pushes Log In to the right */
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Adjusts spacing between text and icon */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.welcome-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    text-align: center;
+    padding: 5px;
+    flex-wrap: wrap;
+}
+
+.welcome-content {
+    flex: 1;
+    text-align: center;
+    padding-right: 50px;
+}
+
+.welcome-content h1 {
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 50px;
+    margin-top: -45px;
+}
+
+.welcome-content p {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 25px;
+}
+
+.welcome-content p:last-of-type {
+    margin-bottom: 30px; 
+}
+
+.welcome-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.welcome-image img {
+    width: 1000px;  
+    height: 700px; 
+    object-fit: cover; 
+}
+
+button#sos-btn {
+    background-color: #E2ADA3;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    display: block;
+    margin-left: 215px ;
+    margin-top: 50px;
+    object-fit: cover;
+    border-radius: 0; 
+    border: 0px ;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2); 
+}
+
+
+.about, .our-story, .team {
+    text-align: center;
+    padding: 25px;
+}
+
+.about h1 {
+    font-size: 100px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    text-align: center;
+}
+
+.about h2 {
+    font-family: 'Poppins', sans-serif; /* Ensure "Navigate" is in Poppins */
+    font-size: 56px; /* Set to 20px */
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.about p:first-of-type {
+    font-family: 'Poppins', sans-serif; /* "Navigate..." text */
+    font-size: 25px; /* Ensure it's 20px */
+    font-weight: 600;
+    text-align: center;
+}
+
+.about p:not(:first-of-type) {
+    font-family: 'Nunito Sans', sans-serif !important; /* Other paragraphs in Nunito */
+    font-size: 20px !important; /* Ensure text below is 18px */
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+/* Styling the Image */
+.about img {
+    display: block;
+    margin: 1px;
+    max-width: 100%;
+    height: auto;
+}
+
+.our-story h2 {
+    font-size: 56px; /* Set "Our Story" to 56px */
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.our-story p:first-of-type {
+    font-size: 25px; /* Set "Materna was built..." to 20px */
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
+
+.our-story p:not(:first-of-type) {
+    font-size: 20px; /* Set the rest of the paragraphs to 18px */
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
+
+.team {
+    text-align: center;
+    padding: 50px;
+    background-color: #EAE3CA;
+    margin-top: -90px; /* Adjust this value as needed */
+}
+.team h2 {
+    font-size: 56px; /* Set "Meet the Team" to 56px */
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    text-align: center;
+}
+
+.team-member {
+    display: inline-block;
+    margin: 20px;
+    text-align: center;
+}
+
+.team-member img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 0; 
+    border: 0px ;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2); 
+}
+
+.team-member p {
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+.team-member p.role {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
+}
+
+.social-links {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.social-links a img {
+    width: 30px; /* Adjust the size as needed */
+    height: 30px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.social-links a img:hover {
+    transform: scale(1.1);
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #e6a89d;
+}
+
+.logo img {
+    width: 20px; /* Adjust size manually */
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #333;
+}
+
+.login {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    position: absolute;
+    top: 15px;
+    right: 30px;
+}
+
+.login-icon {
+    width: 5px; /* Adjust icon size */
+    height: 5px;
+}
+
+.user-icon {
+    width: 25px;  /* Adjust width as needed */
+    height: 25px; /* Adjust height to maintain aspect ratio */
+    margin-left: 5px; /* Space between text and icon */
+}
+
+
+footer {
+    background-color: #E2ADA3; 
+    color: #333;
+    text-align: center;
+    padding: 15px;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
