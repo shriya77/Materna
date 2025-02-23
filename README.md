@@ -64,17 +64,8 @@ The **Pregnancy Symptom Tracker** is a web app designed to help expectant mother
 
 ### 🎨 Frontend (User Interface)
 - HTML – Page structure
-- CSS (Tailwind CSS) – Fast & clean styling
-- JavaScript – Interactivity (Vanilla JS / React)
-- React (Optional) – If a more dynamic UI is preferred
-
-### 🖥 Backend (Logic & Data Handling)
-- Node.js – JavaScript runtime for backend logic
-- Express.js – Handles API requests efficiently
-
-### 🗄 Database (Storing user data)
-- Firebase Firestore – NoSQL, easy setup, free for small-scale use
-- Supabase – Open-source Firebase alternative
+- CSS – Fast & clean styling
+- JavaScript – Interactivity
 
 ### 🔒 Authentication (User Security)
 - Firebase Authentication – Simple & secure user login system
@@ -83,17 +74,6 @@ The **Pregnancy Symptom Tracker** is a web app designed to help expectant mother
 - Vercel – Best for React, free & easy deployment
 
 ### 📂 Version Control & Collaboration
-- Git & GitHub – For tracking changes & teamwork
-
----
-
-## 📩 Contact
-
-Have questions or feedback? We'd love to hear from you!
-- Email: support@pregnancytracker.com
-- Twitter: [@PregnancyTracker](https://twitter.com/PregnancyTracker)
-- Website: [pregnancytracker.com](https://pregnancytracker.com)
-
----
+- GitHub – For tracking changes & teamwork
 
 ### 💕 Stay healthy, stay informed, and enjoy your pregnancy journey!
